@@ -5,7 +5,7 @@ Options:
 * For this project we will be analyzing the sentiment of Rotten Tomatoe Reviews.
 * For the scope of this project we will be trying to predict the freshness rating for a movie, based on the user reviews.
 
-The Tomatometer: http://www.rottentomatoes.com/about/
+The Tomatometer: http://www.rottentomatoes.com/about/     
 Related Kaggle: https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews
 
 Related Work:
