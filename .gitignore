@@ -6,6 +6,10 @@
 *.exe
 *.o
 *.so
+
+# Data Files #
+##############
+*.tsv
 *.csv
  
 # Packages #
