@@ -27,8 +27,7 @@ def getAllReviews(api_key, movie_id):
 #----------------------------------------------------------------------------------------------
 # gets reviews from top crtitiques
 #----------------------------------------------------------------------------------------------
-def getTopCriticReviews(api_key):
-    movie_id = '770672122'  # toy story 3
+def getTopCriticReviews(api_key, movie_id):
     url = 'http://api.rottentomatoes.com/api/public/v1.0/movies/%s/reviews.json' % movie_id
 
     #these are "get parameters"
