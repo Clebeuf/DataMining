@@ -1,9 +1,12 @@
 # Course Project for Data Mining
 ### SENG 474 & CSC 578D
 
-Options:
-* For this project we will be analyzing the sentiment of Rotten Tomatoe Reviews.
-* For the scope of this project we will be trying to predict the freshness rating for a movie, based on the user reviews.
+Overview:
+* For the scope of this project we will be trying to predict the freshness rating for a movie, based on the user reviews.  In order to enhance our predictions, we will be analyzing the sentiment of Rotten Tomatoe Reviews.
+
+Data Sources:
+* A Subset of the Movie Lens Data: https://raw.github.com/cs109/cs109_data/master/movies.dat
+* Rotten Tomatoes API: http://developer.rottentomatoes.com/
 
 The Tomatometer: http://www.rottentomatoes.com/about/     
 Related Kaggle: https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews    
