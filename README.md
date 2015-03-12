@@ -6,6 +6,7 @@ Overview:
 
 Data Sources:
 * A Subset of the Movie Lens Data: https://raw.github.com/cs109/cs109_data/master/movies.dat
+  * Contains approximately 9,400 movies (titles & IMDB ID)
 * Rotten Tomatoes API: http://developer.rottentomatoes.com/
 
 The Tomatometer: http://www.rottentomatoes.com/about/     
