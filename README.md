@@ -9,6 +9,8 @@
   * Contains approximately 9,400 movies (titles & IMDB ID)
   * Adapted from: http://grouplens.org/datasets/movielens/
 * Rotten Tomatoes API: http://developer.rottentomatoes.com/
+ * Reviews API: http://developer.rottentomatoes.com/docs/read/json/v10/Movie_Reviews
+ * Movie Alias API: http://developer.rottentomatoes.com/docs/read/json/v10/Movie_Alias 
 
 The Tomatometer: http://www.rottentomatoes.com/about/     
 Related Kaggle: https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews    
