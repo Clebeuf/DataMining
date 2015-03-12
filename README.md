@@ -17,4 +17,5 @@ Related Work:
 * http://datapsych.weebly.com/blog/bayesian-tomatoes-using-machine-learning-and-text-analysis-to-predict-reviewer-sentiment
 * http://nbviewer.ipython.org/github/xbsd/content/blob/master/HW3_solutions.ipynb
 * http://www.farsiteforecast.com/rotten-tomatoes/
+* http://www.slate.com/articles/arts/culturebox/2011/06/slates_hollywood_careeromatic.html
 
