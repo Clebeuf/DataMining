@@ -21,22 +21,28 @@ def getAllReviews(api_key, movie_id):
     data = requests.get(url, params=options).text
     data = json.loads(data)  # load a json string into a collection of lists and dicts
 
-    # print the reviews
-    reviews = data['reviews']
-    for record in reviews:
-        record["movieID"] = movie_id
-        print json.dumps(record, indent=2)
+    if 'reviews' in data:
+        # print the reviews
+        reviews = data['reviews']
+        for record in reviews:
+            record["movieID"] = movie_id
+            print json.dumps(record, indent=2)
 
-    #these are the "get parameters" for the second 50 reviews (ie. pages 50-100)
-    options = {'review_type': 'all','page_limit': 50, 'page': 50, 'apikey': api_key}
-    data = requests.get(url, params=options).text
-    data = json.loads(data)  # load a json string into a collection of lists and dicts
+        if len(reviews) >= 50:
+            #these are the "get parameters" for the second 50 reviews (ie. pages 50-100)
+            options = {'review_type': 'all','page_limit': 50, 'page': 50, 'apikey': api_key}
+            data = requests.get(url, params=options).text
+            data = json.loads(data)  # load a json string into a collection of lists and dicts
 
-    # print the reviews
-    reviews = data['reviews']
-    for record in reviews:
-        record["movieID"] = movie_id
-        print json.dumps(record, indent=2)
+            # print the reviews
+            reviews = data['reviews']
+            for record in reviews:
+                record["movieID"] = movie_id
+                print json.dumps(record, indent=2)
+    else:
+        f1=open('./moviesNotFound.txt', 'a')
+        temp = 'No reviews: ' + str(movie_id) + '\n'
+        f1.write(temp)
 
 
 #----------------------------------------------------------------------------------------------
@@ -93,16 +99,23 @@ def rt_id_by_imdb(imdbIDs, api_key):
         r = requests.get(url, params=params).text
         r = json.loads(r)
 
-        # add RT id to the array
-        rtID.append(r['id'])
+        if 'id' in r:
+            # add RT id to the array
+            rtID.append(r['id'])
 
-        # write imbd & RT id to logging file
-        f1=open('./imbd-rottenTomato.txt', 'a')
-        temp = movieID + ',' + str(r['id']) + '\n'
-        f1.write(temp)
+            # write imbd & RT id to logging file
+            f1=open('./imbd-rottenTomato.txt', 'a')
+            temp = movieID + ',' + str(r['id']) + '\n'
+            f1.write(temp)
 
-        # get reviews for the RT id
-        getAllReviews(api_key, r['id'])
+            # get reviews for the RT id
+            getAllReviews(api_key, r['id'])
+        elif r['error'] == 'Could not find a movie with the specified id':
+            f1=open('./moviesNotFound.txt', 'a')
+            f1.write(movieID + '\n')
+        else:
+            print r
+            return
 
     return rtID
 
