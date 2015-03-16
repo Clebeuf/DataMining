@@ -21,4 +21,5 @@ Movie Lens Dataset: http://grouplens.org/datasets/movielens/
 * http://nbviewer.ipython.org/github/xbsd/content/blob/master/HW3_solutions.ipynb
 * http://www.farsiteforecast.com/rotten-tomatoes/
 * http://www.slate.com/articles/arts/culturebox/2011/06/slates_hollywood_careeromatic.html
+* http://www.vulture.com/2013/07/summer-movie-quiz-guess-the-rotten-tomato-score.html
 
