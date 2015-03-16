@@ -115,6 +115,8 @@ while(not (line=="")):
 			#end if
 			if(numerator == -1):
 				score = "INVALID"
+			elif (divisor == 0):
+				score == '0'
 			else:
 				percent = numerator/divisor
 				score = str(percent)
