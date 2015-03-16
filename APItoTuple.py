@@ -113,10 +113,8 @@ while(not (line=="")):
 					divisor=float(strDivisor)
 				#end if
 			#end if
-			if(numerator == -1):
+			if(numerator == -1 or divisor == 0):
 				score = "INVALID"
-			elif (divisor == 0):
-				score == '0'
 			else:
 				percent = numerator/divisor
 				score = str(percent)
