@@ -20,6 +20,7 @@
  * stemming (Porter or KSTEM)
  * convert everything into the same case
  * remove "junk"
+ * sentiment analysis: http://www.nltk.org/api/nltk.html
 
 The Tomatometer: http://www.rottentomatoes.com/about/     
 Related Kaggle: https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews    
