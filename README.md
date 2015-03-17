@@ -17,6 +17,7 @@
  * http://developer.rottentomatoes.com/docs/read/json/v10/Movie_Info
 * Preprocess the comments a bit more
  * removing stopwords
+ * stemming (Porter or KSTEM)
  * convert everything into the same case
  * remove "junk"
 
