@@ -48,6 +48,7 @@ while(not (line=="")):
 		#elif(cat=="publication"):
 		#	tup += value + ','
 		elif(cat=="quote"):
+			value = value.replace('\'','\\\'')
 			quote = '\"' + value + '\"'
 			quoteB=True
 		elif(cat=="freshness"):
@@ -64,10 +65,7 @@ while(not (line=="")):
 			#end if
 
 			if(movieIDB and freshnessB and quoteB and not(quote=='\"\"') and not(freshness=="\"none\"") and not(critic=='\"\"')):			
-				if(not scoreB):
-					score="NONE"
-				#end if
-				tup=movieID+','+critic+','+freshness+','+score+','+quote+'\n'
+				tup=movieID+','+critic+','+quote+','+freshness+'\n'
 				#print tup.strip()
 				oFile1.write(tup)
 			#end if
