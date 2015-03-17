@@ -12,6 +12,14 @@
  * Reviews API: http://developer.rottentomatoes.com/docs/read/json/v10/Movie_Reviews
  * Movie Alias API: http://developer.rottentomatoes.com/docs/read/json/v10/Movie_Alias 
 
+**Additional Options:**
+* Get the abridged cast list
+ * http://developer.rottentomatoes.com/docs/read/json/v10/Movie_Info
+* Preprocess the comments a bit more
+ * removing stopwords
+ * convert everything into the same case
+ * remove "junk"
+
 The Tomatometer: http://www.rottentomatoes.com/about/     
 Related Kaggle: https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews    
 Movie Lens Dataset: http://grouplens.org/datasets/movielens/
