@@ -1,0 +1,46 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -I 100 -K 0 -S 1 -depth 100 -num-slots 8
+Relation:     freshness-weka.filters.unsupervised.attribute.Remove-R1-2-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!"
+Instances:    156021
+Attributes:   1245
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Random forest of 100 trees, each constructed while considering 11 random features.
+Out of bag error: 0.2892
+Max. depth of trees: 100
+
+
+
+Time taken to build model: 965.49 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances      111427               71.418  %
+Incorrectly Classified Instances     44594               28.582  %
+Kappa statistic                          0.3008
+Mean absolute error                      0.4048
+Root mean squared error                  0.4333
+Relative absolute error                 86.8321 %
+Root relative squared error             89.761  %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      99.9788 %
+Total Number of Instances           156021     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.948    0.684    0.702      0.948    0.807      0.357    0.801     0.872     fresh
+                 0.316    0.052    0.781      0.316    0.450      0.357    0.801     0.700     rotten
+Weighted Avg.    0.714    0.450    0.732      0.714    0.675      0.357    0.801     0.809     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 93213  5098 |     a = fresh
+ 39496 18214 |     b = rotten
+

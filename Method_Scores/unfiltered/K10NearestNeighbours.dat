@@ -1,0 +1,44 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 10 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     freshness-weka.filters.unsupervised.attribute.Remove-R1-2-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!"
+Instances:    156021
+Attributes:   1245
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 10 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.08 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances      101741               65.2098 %
+Incorrectly Classified Instances     54280               34.7902 %
+Kappa statistic                          0.1558
+Mean absolute error                      0.43  
+Root mean squared error                  0.4663
+Relative absolute error                 92.2458 %
+Root relative squared error             96.5939 %
+Coverage of cases (0.95 level)          99.8987 %
+Mean rel. region size (0.95 level)      99.2283 %
+Total Number of Instances           156021     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.889    0.751    0.668      0.889    0.763      0.180    0.655     0.758     fresh
+                 0.249    0.111    0.568      0.249    0.346      0.180    0.655     0.512     rotten
+Weighted Avg.    0.652    0.514    0.631      0.652    0.609      0.180    0.655     0.667     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 87370 10941 |     a = fresh
+ 43339 14371 |     b = rotten
+
