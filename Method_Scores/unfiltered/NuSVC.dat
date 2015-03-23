@@ -1,0 +1,42 @@
+=== Run information ===
+
+Scheme       weka.classifiers.functions.LibSVM -S 1 -K 3 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -model CProgram FilesWeka-3-7 -seed 1
+Relation     freshness-weka.filters.unsupervised.attribute.Remove-R1-2-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-C-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters  rnt.,;'()!
+Instances    156021
+Attributes   1251
+              [list of attributes omitted]
+Test mode    5-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LibSVM wrapper, original code by Yasser EL-Manzalawy (= WLSVM)
+
+Time taken to build model 31594.48 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances      115231               73.8561 %
+Incorrectly Classified Instances     40790               26.1439 %
+Kappa statistic                          0.4326
+Mean absolute error                      0.2614
+Root mean squared error                  0.5113
+Relative absolute error                 55.364  %
+Root relative squared error            105.2274 %
+Coverage of cases (0.95 level)          73.8561 %
+Mean rel. region size (0.95 level)      50      %
+Total Number of Instances           156021     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.828    0.406    0.767      0.828    0.796      0.435    0.711     0.742     fresh
+                 0.594    0.172    0.681      0.594    0.635      0.435    0.711     0.560     rotten
+Weighted Avg.    0.739    0.316    0.734      0.739    0.735      0.435    0.711     0.672     
+
+=== Confusion Matrix ===
+
+     a     b   -- classified as
+ 79797 16602      a = fresh
+ 24188 35434      b = rotten
+
